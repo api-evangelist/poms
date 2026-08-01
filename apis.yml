@@ -1,8 +1,29 @@
 aid: poms
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/poms.png
 name: POMS
-description: 'POMS is a company surfaced as a portfolio company of insight-partners and added to the API
-  Evangelist network as a stub for enrichment. Sector: manufacturing. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  POMS Corporation develops POMSnet Aquila, a Manufacturing Execution System
+  (MES) purpose-built for pharmaceutical, biotech, cell and gene therapy, and
+  medical device manufacturers. The platform delivers FDA-compliant electronic
+  batch records (EBR), production execution, review-by-exception, and plant-floor
+  integration with ERP and equipment systems, deployed on-premise or in the
+  cloud. POMS also offers the POMSnet Falcon EBR analytics dashboards. Founded
+  around its first MES implementation in 1988 and headquartered in Redmond,
+  Washington, POMS sells enterprise software to regulated life-sciences
+  manufacturers rather than publishing a public developer API. Surfaced as an
+  Insight Partners portfolio lead, this profile is enriched from the company's
+  public web presence; no public API, OpenAPI, or developer portal was found.
 url: https://raw.githubusercontent.com/api-evangelist/poms/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +33,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Manufacturing
+- Manufacturing Execution System
+- MES
+- Pharmaceutical
+- Electronic Batch Records
+- Life Sciences
+- Biotech
 apis: []
+common:
+- type: Website
+  url: https://www.poms.com/
+- type: About
+  url: https://www.poms.com/about-poms/
+- type: Support
+  url: https://www.poms.com/support/
+- type: Blog
+  url: https://www.poms.com/blog/
+- type: PrivacyPolicy
+  url: https://www.poms.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.poms.com/terms/
+- type: DomainSecurity
+  url: security/poms-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
